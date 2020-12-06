@@ -1,0 +1,358 @@
+{
+	"id": "1ab7798b-83d0-b703-a95e-6b5821930726",
+	"name": "HealthCare",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Dependents API",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"order": [
+				"da34fb23-8ecb-fe13-4944-7c4e060d73a8",
+				"69a76e9b-5b18-9153-c31b-cd66c37bb427",
+				"304b1df3-41e7-01d2-62db-d57aa61e43e2",
+				"b273c9d8-d1a9-2543-9f1e-719c4c0ec374",
+				"35298771-60e4-708c-3705-14b2c265b262"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "18fcc4d3-18b7-132b-39a1-992c04ab320b"
+		},
+		{
+			"name": "Enrollees API",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"order": [
+				"b46cbf20-f13b-656b-f8c1-54dbffe622d2",
+				"9e582e2b-2525-9f7e-9ead-97b01f825cb4",
+				"5f3616c8-6d44-27fe-5b9d-ff7cbb9ec927",
+				"cbb94759-00bd-5c24-7846-8d80f4a3330a",
+				"b150563f-47bd-8054-e946-8e6109b8eaa6"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "d79f6364-473d-d74d-8760-5471816fe7b1"
+		}
+	],
+	"folders_order": [
+		"d79f6364-473d-d74d-8760-5471816fe7b1",
+		"18fcc4d3-18b7-132b-39a1-992c04ab320b"
+	],
+	"timestamp": 1599792801286,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "304b1df3-41e7-01d2-62db-d57aa61e43e2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/1/dependents/1",
+			"folder": "18fcc4d3-18b7-132b-39a1-992c04ab320b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599802645259,
+			"name": "GET Dependent",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": \"c01\",\n\t\"name\": \"course_1\",\n\t\"description\": \"course_1\"\n}"
+		},
+		{
+			"id": "35298771-60e4-708c-3705-14b2c265b262",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/1/dependents/1",
+			"folder": "18fcc4d3-18b7-132b-39a1-992c04ab320b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599802782315,
+			"name": "Delete Dependent",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "5f3616c8-6d44-27fe-5b9d-ff7cbb9ec927",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees",
+			"folder": "d79f6364-473d-d74d-8760-5471816fe7b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599814124025,
+			"name": "Add Enrollee",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\": \"user\",\n\t\"activationStatus\": true,\n\t\"birthDate\": \"2020-11-09\",\n\t\"phoneNumber\": \"7423787890\"\n}"
+		},
+		{
+			"id": "69a76e9b-5b18-9153-c31b-cd66c37bb427",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/1/dependents",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Add Dependent",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1599800953126,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "18fcc4d3-18b7-132b-39a1-992c04ab320b",
+			"rawModeData": "{\n  \"name\": \"dependent\",\n  \"birthDate\": \"2020-11-09\"\n}"
+		},
+		{
+			"id": "9e582e2b-2525-9f7e-9ead-97b01f825cb4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/1",
+			"folder": "d79f6364-473d-d74d-8760-5471816fe7b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599802483792,
+			"name": "GET Enrollee By Id",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": \"c01\",\n\t\"name\": \"course_1\",\n\t\"description\": \"course_1\"\n}"
+		},
+		{
+			"id": "b150563f-47bd-8054-e946-8e6109b8eaa6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/2",
+			"folder": "d79f6364-473d-d74d-8760-5471816fe7b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599802530149,
+			"name": "Delete Enrollee",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "b273c9d8-d1a9-2543-9f1e-719c4c0ec374",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/1/dependents/1",
+			"folder": "18fcc4d3-18b7-132b-39a1-992c04ab320b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599802771334,
+			"name": "Modify Dependent",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": "{\n  \"name\": \"dependent\",\n  \"birthDate\": \"2021-11-09\"\n}"
+		},
+		{
+			"id": "b46cbf20-f13b-656b-f8c1-54dbffe622d2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees",
+			"folder": "d79f6364-473d-d74d-8760-5471816fe7b1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599802471732,
+			"name": "GET All Enrollees",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\": \"c01\",\n\t\"name\": \"course_1\",\n\t\"description\": \"course_1\"\n}"
+		},
+		{
+			"id": "cbb94759-00bd-5c24-7846-8d80f4a3330a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1599814172589,
+			"name": "Modify Enrollee",
+			"description": "",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\": \"user_02\",\n\t\"activationStatus\": true,\n\t\"birthDate\": \"2021-11-09\",\n\t\"phoneNumber\": \"7423787891\"\n}"
+		},
+		{
+			"id": "da34fb23-8ecb-fe13-4944-7c4e060d73a8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/enrollees/1/dependents",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1ab7798b-83d0-b703-a95e-6b5821930726",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GET All Dependents",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1599800584510,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "18fcc4d3-18b7-132b-39a1-992c04ab320b",
+			"rawModeData": "{\n\t\"id\": \"c01\",\n\t\"name\": \"course_1\",\n\t\"description\": \"course_1\"\n}"
+		}
+	]
+}
