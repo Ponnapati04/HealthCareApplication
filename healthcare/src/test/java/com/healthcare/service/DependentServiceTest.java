@@ -45,9 +45,6 @@ public class DependentServiceTest {
 		MockitoAnnotations.initMocks(this);
 		enrollee1 = new Enrollee(1L, "enrollee1", true, new Date(), "7643278685");
 		enrollee2 = new Enrollee(2L, "enrollee2", true, new Date(), "7643278687");
-//		enrollee3 = new Enrollee();
-//		enrollee3.setName("enrollee3");
-//		enrollee3.setActivationStatus(false);
 
 		dependent1 = new Dependent(1L, "dependent1", new Date(), enrollee1);
 		dependent2 = new Dependent(2L, "dependent2", new Date(), enrollee2);
